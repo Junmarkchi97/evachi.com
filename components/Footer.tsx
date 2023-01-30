@@ -6,7 +6,7 @@ type Props = {};
 
 function Footer({}: Props) {
   return (
-    <section className="grid py-[100px] w-full border-t border-light text-light text-2xl  min-2xl:mx-[400px]">
+    <section className="grid py-[100px] w-full border-t border-light text-light text-2xl 2xl:px-[400px]">
       <div className="flex items-start w-full max-md:grid max-md:gap-10 max-xs:text-base">
         <div className="pl-10 grid w-1/2 gap-10">
           <div className="grid gap-3">
@@ -89,7 +89,7 @@ function Footer({}: Props) {
         </div>
       </Link>
       <div className="text-center text-xs mt-10">
-        ©2022 Eva Jane Chi - All Rights Reserved
+        ©2023 Eva Jane Chi - All Rights Reserved
       </div>
     </section>
   );
