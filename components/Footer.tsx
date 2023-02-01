@@ -2,11 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
-
-function Footer({}: Props) {
+function Footer() {
   return (
-    <section className="grid py-[100px] w-full border-t border-light text-light text-2xl 2xl:px-[400px]">
+    <footer className="grid py-[100px] w-full border-t border-light text-light text-2xl 2xl:px-[300px]">
       <div className="flex items-start w-full max-md:grid max-md:gap-10 max-xs:text-base">
         <div className="pl-10 grid w-1/2 gap-10">
           <div className="grid gap-3">
@@ -74,24 +72,19 @@ function Footer({}: Props) {
           </div>
         </div>
       </div>
-      <Link
-        href="https://www.junmarkchi.com"
-        target="_blank"
-        className="w-fit motion-safe:animate-bounce max-xs:text-base group ml-10 flex gap-1 justify-start mt-20 text-lg"
-      >
-        <span className="group-hover:rotate-[360deg] transition-all duration-500 ease-[cubic-bezier(.57,-0.04,1,.7)] timin origin-center text-center flex items-center justify-center">
-          ©
+
+      <div className="text-center text-xs mt-40 flex justify-between">
+        <span>©2023 Eva Jane Chi - All Rights Reserved</span>
+        <span className="w-[60%]">
+          Listed services in the page are in connection with{" "}
+          <span className="font-semibold">Sun life Canada Phils. Inc.</span>,
+          <span className="font-semibold"> Maxicare Healthcare Corp</span>, and
+          <span className="font-semibold"> St. Peter life plans</span> thru
+          affliation ang licensed of{" "}
+          <span className="font-semibold">Eva Jane Macutay Chi.</span>
         </span>
-        <div className="overflow-hidden w-[67px] transition-all max-xs:w-[125px] group-hover:w-[200px] duration-500 relative ease-[cubic-bezier(.57,-0.04,1,.7)]">
-          <span className="whitespace-nowrap absolute transition-all  group-hover:-translate-x-[70px] duration-500 ease-[cubic-bezier(.57,-0.04,1,.7)] ">
-            Code by Junmark Chi
-          </span>
-        </div>
-      </Link>
-      <div className="text-center text-xs mt-10">
-        ©2023 Eva Jane Chi - All Rights Reserved
       </div>
-    </section>
+    </footer>
   );
 }
 
